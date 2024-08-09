@@ -1,0 +1,40 @@
+{
+  "applicationId": "js.neutralino.zero",
+  "version": "1.0.0",
+  "defaultMode": "window",
+  "documentRoot": "/dist/",
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "nativeAllowList": [
+    "app.*",
+    "filesystem.readDirectory"
+  ],
+  "modes": {
+    "window": {
+      "title": "Neutralino + Vite + TS",
+      "width": 800,
+      "height": 500,
+      "minWidth": 400,
+      "minHeight": 200,
+      "icon": "/dist/icon.png",
+      "enableInspector": true,
+      "exitProcessOnClose": true
+    }
+  },
+  "cli": {
+    "binaryName": "neutralino-vite-ts",
+    "resourcesPath": "/dist/",
+    "extensionsPath": "/extensions/",
+    "binaryVersion": "5.3.0",
+    "clientVersion": "5.3.0",
+    "frontendLibrary": {
+        "patchFile": "/index.html",
+        "devUrl": "http://localhost:5173",
+        "projectPath": "/",
+        "initCommand": "npm install",
+        "devCommand": "npm run dev",
+        "buildCommand": "npm run build"
+    }
+  }
+}
